@@ -1,0 +1,1 @@
+{"name":"Local: Recursion_Into_String_permutation","url":"d:\\Java2026\\Recursion_Into_String_permutation.java","tests":[{"id":1777218489437,"input":"abc\n","output":"cba\nbca\nbac\ncab\nacb\nabc"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Java2026\\Recursion_Into_String_permutation.java","group":"local","local":true}

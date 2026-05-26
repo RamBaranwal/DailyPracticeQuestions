@@ -1,0 +1,1 @@
+{"name":"Local: Recursion_Backtracking_Subset","url":"d:\\Java2026\\Recursion_Backtracking_Subset.java","tests":[{"id":1776965140004,"input":"3\n1 2 3","output":"[[], [1], [1, 2], [1, 2, 3], [1, 3], [2], [2, 3], [3]]\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Java2026\\Recursion_Backtracking_Subset.java","group":"local","local":true}

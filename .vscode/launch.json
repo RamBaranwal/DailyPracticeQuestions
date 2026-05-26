@@ -1,0 +1,47 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "QUICK_SORT",
+      "request": "launch",
+      "mainClass": "QUICK_SORT",
+      "projectName": "Java2026_ff111fbd"
+    },
+    {
+      "type": "java",
+      "name": "Recursion_Pattern",
+      "request": "launch",
+      "mainClass": "Recursion_Pattern",
+      "projectName": "Java2026_ff111fbd"
+    },
+    {
+      "type": "java",
+      "name": "Recursion_opposite_number",
+      "request": "launch",
+      "mainClass": "Recursion_opposite_number",
+      "projectName": "Java2026_ff111fbd"
+    },
+    {
+      "type": "java",
+      "name": "Recursion_product_of_number",
+      "request": "launch",
+      "mainClass": "Recursion_product_of_number",
+      "projectName": "Java2026_ff111fbd"
+    },
+    {
+      "type": "java",
+      "name": "Recursion",
+      "request": "launch",
+      "mainClass": "Recursion",
+      "projectName": "Java2026_ff111fbd"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Terminal)",
+      "request": "launch",
+      "mainClass": "RECURSION_BASE",
+      "console": "integratedTerminal"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+{"name":"Local: Recursion_Subset_v4","url":"d:\\Java2026\\Recursion_Subset_v4.java","tests":[{"id":1777194113165,"input":"3\n1 2 3","output":"[[], [1], [2], [1, 2], [3], [1, 3], [2, 3], [1, 2, 3]]"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Java2026\\Recursion_Subset_v4.java","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: Recursion_Pattern","url":"d:\\Java2026\\Recursion_Pattern.java","tests":[{"id":1775928987927,"input":"5","output":"* * * * * \n* * * * \n* * * \n* * \n* \n\n* \n* * \n* * * \n* * * * \n* * * * * "}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Java2026\\Recursion_Pattern.java","group":"local","local":true}

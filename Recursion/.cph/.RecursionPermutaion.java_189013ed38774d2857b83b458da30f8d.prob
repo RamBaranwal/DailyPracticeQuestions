@@ -1,0 +1,1 @@
+{"name":"Local: RecursionPermutaion","url":"d:\\Java2026\\Recursion\\RecursionPermutaion.java","tests":[{"id":1777805432298,"input":"abc","output":"cba bca bac cab acb abc "}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Java2026\\Recursion\\RecursionPermutaion.java","group":"local","local":true}

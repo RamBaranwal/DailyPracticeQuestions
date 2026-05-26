@@ -1,0 +1,1 @@
+{"name":"Local: Maze_Obstacles_Count_REcursion","url":"d:\\Java2026\\Recursion\\Maze_Obstacles_Count_REcursion.java","tests":[{"id":1778088513322,"input":"3 3\n0 0 0\n1 0 1\n1 0 0","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Java2026\\Recursion\\Maze_Obstacles_Count_REcursion.java","group":"local","local":true}

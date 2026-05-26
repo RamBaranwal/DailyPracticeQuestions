@@ -1,0 +1,1 @@
+{"name":"Local: QUICK_SORT","url":"d:\\Java2026\\QUICK_SORT.java","tests":[{"id":1776364437658,"input":"5\n5 4 3 2 1","output":""},{"id":1776399637645,"input":"5\n5 2 9 1 6","output":""},{"id":1776447151214,"input":"5\n1 2 4 5 6","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Java2026\\QUICK_SORT.java","group":"local","local":true}

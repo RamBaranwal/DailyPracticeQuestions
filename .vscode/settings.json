@@ -1,0 +1,8 @@
+{
+    "notebook.output.minimalErrorRendering": true,
+    "java.help.collectErrorLog": true,
+    "debug.javascript.breakOnConditionalError": true,
+    "cSpell.words": [
+        "diffenercicate"
+    ]
+}

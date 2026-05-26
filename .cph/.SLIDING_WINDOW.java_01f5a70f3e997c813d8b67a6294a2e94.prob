@@ -1,0 +1,1 @@
+{"name":"Local: SLIDING_WINDOW","url":"d:\\Java2026\\SLIDING_WINDOW.java","tests":[{"id":1771516817956,"input":"3\n7\n1 1 2 2 3 1 7\n6\n3\n2 2 3\n3\n6\n2 5 1 10 10 1\n14","output":"Subarray: 1 1 2 2 \n4\nSubarray: 2 \n1\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Java2026\\SLIDING_WINDOW.java","group":"local","local":true}
