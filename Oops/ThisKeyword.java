@@ -18,7 +18,7 @@ class Student {
         this.marks = 0.0f;
     }
 }
-public class ThisKeyWord {
+public class ThisKeyword {
     public static void main(String[] args) {
 
         // the problem is for each we have to write it again and again so we use
