@@ -1,42 +1,3 @@
-package StaticExample;
-
-// no need of import if same folder we are
-public class Main {
-    public static void main(String[] args) {
-        Human kunal = new Human(23, "Kunal Kushwaha", 100000, false);
-        Human rahul = new Human(34, "Rahul Shrivashtav", 20000, true);
-        System.out.println(kunal.population);
-        Human ranjan = new Human(25, "Ranjan Mathare", 25000, true);
-
-        
-        // this is the convention
-        System.out.println(Human.population);
-        System.out.println(Human.population);
-        System.out.println(Human.population);
-        // we can do like this also but when we take refrence direct from class it is more easily and clearly readable code
-        // System.out.println(kunal.population);
-
-        // to run this
-        // javac StaticExample\*.java  -> used to run all the files inside the staticExample
-        // java StaticExample.Main     -> used to run the current file you want to run
-
-        // when inside the human class population is not static it gives
-        // output
-        // 1
-        // 1
-
-        // when we change population to static it gives
-        // output
-        // 2
-        // 2
-
-        Human h1 = new Human();
-        Human h2 = new Human();
-        System.out.println(Human.population);
-
-    }
-}
-/*
 # Java Static Keyword - Quick Revision Notes
 
 ## 1. What is `static`?
@@ -275,4 +236,3 @@ Static Method → Can be called using class name
 `this` → Not allowed inside static methods
 
 Best Practice → Access static members using ClassName.member
-*/
