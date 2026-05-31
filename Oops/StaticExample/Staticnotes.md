@@ -438,22 +438,81 @@ Best Practice -> Access static members using ClassName.member
 ```
 
 
-Revision Table
-Method	Static?	Needs Object?	How to Call
-fun()	✅ Yes	❌ No	StaticFunCall.fun()
-fun2()	✅ Yes	❌ No	StaticFunCall.fun2()
-greeting3()	✅ Yes	❌ No	StaticFunCall.greeting3()
-greeting()	❌ No	✅ Yes	obj.greeting()
-greeting2()	❌ No	✅ Yes	obj.greeting2()
-Easy Rule
-Static Method  -> ClassName.method()
+## Revision Table
+
+| Method        | Static? | Needs Object? | How to Call                 |
+| ------------- | ------- | ------------- | --------------------------- |
+| `fun()`       | ✅ Yes   | ❌ No          | `StaticFunCall.fun()`       |
+| `fun2()`      | ✅ Yes   | ❌ No          | `StaticFunCall.fun2()`      |
+| `greeting3()` | ✅ Yes   | ❌ No          | `StaticFunCall.greeting3()` |
+| `greeting()`  | ❌ No    | ✅ Yes         | `obj.greeting()`            |
+| `greeting2()` | ❌ No    | ✅ Yes         | `obj.greeting2()`           |
+
+---
+
+## Easy Rule
+
+```text
+Static Method     -> ClassName.method()
 Non-Static Method -> object.method()
+```
 
-Examples:
+---
 
-StaticFunCall.fun();          // Static
-StaticFunCall.greeting3();    // Static
+## Examples
 
+### Calling Static Methods
+
+```java
+StaticFunCall.fun();
+StaticFunCall.fun2();
+StaticFunCall.greeting3();
+```
+
+No object is required because these methods belong to the class.
+
+---
+
+### Calling Non-Static Methods
+
+```java
 StaticFunCall obj = new StaticFunCall();
-obj.greeting();               // Non-static
-obj.greeting2();              // Non-static
+
+obj.greeting();
+obj.greeting2();
+```
+
+An object is required because these methods belong to an instance of the class.
+
+---
+
+## Quick Memory Trick
+
+```text
+static  -> belongs to Class
+non-static -> belongs to Object
+
+Class member  -> ClassName.member
+Object member -> object.member
+```
+
+---
+
+## Most Important Interview Rule
+
+```java
+static void fun() {
+    greeting3();   // ✅ Static method can call static method
+
+    // greeting(); // ❌ Error
+}
+```
+
+To call a non-static method from a static method:
+
+```java
+static void fun() {
+    StaticFunCall obj = new StaticFunCall();
+    obj.greeting();   // ✅
+}
+```
