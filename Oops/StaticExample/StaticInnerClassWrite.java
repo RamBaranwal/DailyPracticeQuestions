@@ -12,7 +12,9 @@ public class StaticInnerClassWrite {
         StaticInnerClassWrite outer = new StaticInnerClassWrite();
 
         Test a = outer.new Test("Kunal");
+        Test b = outer.new Test("Rahul");
 
         System.out.println(a.name);
+        System.out.println(b.name);
     }
 }

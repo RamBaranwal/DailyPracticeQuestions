@@ -21,3 +21,7 @@ public class StaticInnerClass {
         System.out.println(b.name);
     }
 }
+
+// output
+// kunal
+// rahul
