@@ -2,6 +2,8 @@ package Inheritance;
 
 public class Box {
     double height;
+    // private double height;
+    // by private it make length only accessible inside this class
     double width;
     double length;
 
