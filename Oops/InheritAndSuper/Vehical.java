@@ -1,4 +1,4 @@
-package Oops.Inherit;
+package Oops.InheritAndSuper;
 
 public class Vehical {
 
