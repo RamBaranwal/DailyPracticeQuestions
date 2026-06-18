@@ -37,11 +37,21 @@ public class Main {
         m.obj.call();
         m.obj2.print();
         m.obj4.print();
-        int result = m.sysIn.systemIn(10);
+        int result = m.sysIn.walk(10);
+
+        SystemIn sysIn = (int walkong) -> {
+            System.out.println("Walkin");
+            return walkong;
+        };
+
+        sysIn.walk(5);
     }
 }
 
-
+@FunctionalInterface
+interface SystemIn{
+    int walk(int walk);
+}
 
 class OuterClass{
 
@@ -61,9 +71,4 @@ interface SuperClass{
 @FunctionalInterface
 interface SystemUp{
     void show();
-}
-
-@FunctionalInterface
-interface SystemIn{
-    int systemIn(int walk);
 }
