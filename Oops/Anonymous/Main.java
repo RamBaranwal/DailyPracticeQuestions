@@ -50,7 +50,7 @@ public class Main {
 
 @FunctionalInterface
 interface SystemIn{
-    int walk(int walk);
+    int walk(int walked);
 }
 
 class OuterClass{
