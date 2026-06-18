@@ -1,3 +1,5 @@
+package StaticExample;
+
 public class StaticInnerClassWrite {
     class Test {
         String name;

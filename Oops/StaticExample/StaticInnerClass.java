@@ -1,3 +1,5 @@
+package StaticExample;
+
 class Test{
     String name;
     Test(String name){
@@ -13,6 +15,10 @@ public class StaticInnerClass {
         }
     }
     public static void main(String[] args) {
+
+        // both are same method for use purpose
+
+        Test c = new StaticInnerClass.Test("Sunil");
         
         Test a = new Test("Kunal");
         Test b = new Test("Rahul");
