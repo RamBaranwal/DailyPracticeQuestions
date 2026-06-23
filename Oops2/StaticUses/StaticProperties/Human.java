@@ -1,4 +1,4 @@
-package Oops2.StaticUses;
+package Oops2.StaticUses.StaticProperties;
 
 public class Human {
     String name;
