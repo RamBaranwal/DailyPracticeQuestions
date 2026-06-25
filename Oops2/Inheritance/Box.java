@@ -21,4 +21,9 @@ public class Box {
         this.w = w;
         this.h = h;
     }
+    Box(Box other){
+        this.l = other.l;
+        this.w = other.w;
+        this.h = other.h;
+    }
 }

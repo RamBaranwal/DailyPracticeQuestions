@@ -25,6 +25,10 @@ public class Main {
         // BoxWeight obj7 = new Box(5, 4, 2);
         // cannot access parent class form child class
 
-        
+        BoxWeight obj8 = new BoxWeight((BoxWeight)obj6);
+
+        BoxWeight obj9 = new BoxWeight(obj6);
+
+        BoxPrice p1 = new BoxPrice(6, 9.0f, 3.5d);
     }
 }
