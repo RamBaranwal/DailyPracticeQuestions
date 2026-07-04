@@ -1,4 +1,4 @@
-package Oops2.Polymorphism.CompileTime;
+package Oops2.Polymorphism.RunTime;
 
 public class Shape {
     int a = 90;
@@ -9,7 +9,8 @@ public class Shape {
     // -> different number of data types inside parameter
     // -> different order of same data types
     // -> and different constructor overload as we see inside inheritance of box file
-    void area(){
+    // now final help not to override the same function into child class
+    final void area(){
         System.out.println("this is only shape whose are not easily getable");
     }
     int area(int a){
@@ -32,4 +33,12 @@ public class Shape {
     // long area(){
     //     return 0;
     // }
+
+    void fun(){
+        System.out.println("this is of shape parent class");
+    }
+
+    static void write(){
+        System.out.println("write fun inside the parent shape class");
+    }
 }

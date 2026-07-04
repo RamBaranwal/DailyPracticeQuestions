@@ -37,4 +37,4 @@ class Car extends Vehicle{
     int noOfSeats(int num) {
         return num;
     }
-}   
+}
