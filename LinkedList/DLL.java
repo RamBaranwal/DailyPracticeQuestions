@@ -128,6 +128,56 @@ public class DLL {
         size++;
     }
 
+    public int delete(int index){
+        if(index == 0){
+            return deleteFirst();
+        }
+        if(index == size - 1){
+            return deleteLast();
+        }
+
+        Node temp = head;
+
+        for(int i = 1; i < index; i++){
+            temp = temp.next;
+        }
+        int val = temp.next.data;
+
+        temp.next = temp.next.next;
+        temp.next.prev = temp;
+        size--;
+        return val;
+    }
+
+    public void insertAfter(int after, int val){
+        Node temp = find(after);
+        if (temp == null) {
+            System.out.println("Node not found");
+            return;
+        }
+        Node n = new Node(val);
+        n.next = temp.next;
+        if(temp.next != null){
+            temp.next.prev = n;
+        }
+        else{
+            tail = null;
+        }
+        n.prev = temp;
+        temp.next = n;
+        size++;
+    }
+
+    public Node find(int val){
+        Node temp = head;
+        while (temp != null) {
+            if(temp.data == val){
+                return temp;
+            }
+            temp = temp.next;
+        }
+        return null;
+    }
 
     public Node index(int i){
         if(i < 0 || i >= size){
@@ -173,6 +223,10 @@ public class DLL {
             temp = temp.prev;
         }
         System.out.println("END");
+    }
+
+    public void getSize(){
+        System.out.println(size);
     }
 
 }

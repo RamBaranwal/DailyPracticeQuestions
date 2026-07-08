@@ -24,7 +24,11 @@ public class MainDLL {
         System.out.println(obj.deleteLast());
         obj.displayFromHead();
         obj.insert(5, 3);
-        obj.insert(5, 5);
+        obj.insert(15, 5);
+        obj.displayFromHead();
+        obj.insertAfter(5, 20);
+        obj.displayFromHead();
+        obj.delete(4);
         obj.displayFromHead();
     }
 }
