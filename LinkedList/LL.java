@@ -26,13 +26,20 @@ public class LL {
 
     public void insertFirst(int val){
         Node n = new Node(val);
+
+        if(head == null){
+            head = n;
+            tail = n;
+            size++;
+            return;
+        }
         n.data = val;
         n.next = head;
         head = n;
 
-        if(tail == null){
-            tail = head;
-        }
+        // if(tail == null){
+        //     tail = head;
+        // }
 
         size++;
     }

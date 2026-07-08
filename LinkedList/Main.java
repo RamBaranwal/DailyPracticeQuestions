@@ -20,6 +20,10 @@ public class Main {
 
         // now insert form last
         LL obj2 = new LL();
+        obj2.insertFirst( 5);
+        obj2.insertFirst( 6);
+        obj2.insertFirst( 7);
+        obj2.display();
         obj2.insert(10, 0);
         obj2.insert(20, 1);
         obj2.display();
