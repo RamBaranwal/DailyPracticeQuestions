@@ -71,13 +71,20 @@ public class CreateGenArrList<T> {
     }
     public static void main(String[] args) {
         ArrayList<Integer> list = new ArrayList<>();
+        System.out.println(list);
+        System.out.println(list.size());
         CreateGenArrList<Integer> list2 = new CreateGenArrList<>();
         list2.add(4);
         list2.add(3);
         list2.add(1);
         list2.add(9);
         list2.add(8);
+        list2.remove();
         // list2.add("aiujfb ");
+        System.out.println(list2.toString2());
+        System.out.println(list2.toString());
+        list2.add(10);
+        // override performs here
         System.out.println(list2.toString2());
         System.out.println(list2.toString());
     }

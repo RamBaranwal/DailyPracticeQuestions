@@ -24,6 +24,49 @@ public class LL {
         this.size = 0;
     }
 
+    // question leetcode 21
+    public static LL merge(LL fList, LL sList){
+        Node f = fList.head;
+        Node s = sList.head;
+
+        LL ans = new LL();
+        while(f != null && s != null){
+            if(f.data <= s.data){
+                ans.insertLast(f.data);
+                f = f.next;
+            }
+            else{
+                ans.insertLast(s.data);
+                s = s.next;
+            }
+        }
+        while (f != null) {
+            ans.insertLast(f.data);
+            f = f.next;
+        }
+        while (s != null) {
+            ans.insertLast(s.data);
+            s = s.next;
+        }
+        return ans;
+    }
+
+    // question leetcode 83
+    public void duplicate(){
+        Node temp = head;
+        while (temp != null && temp.next != null) {
+            if(temp.data == temp.next.data){
+                temp.next = temp.next.next;
+                size--;
+            }
+            else{
+                temp = temp.next;
+            }
+        }
+        tail = temp;
+        tail.next = null;
+    }
+
     public void insertFirst(int val){
         Node n = new Node(val);
 
@@ -63,6 +106,22 @@ public class LL {
         tail.next = n;
         tail = n;
         size++;
+    }
+
+    public void insertRec(int val, int index){
+        head = insertHelper(val, index, head);
+    }
+
+    private Node insertHelper(int val, int index, Node n){
+        if(index == 0){
+            Node temp = new Node(val);
+            temp.next = n;
+            size++;
+            return temp;
+        }
+
+        n.next = insertHelper(val, index - 1, n.next);
+        return n;
     }
 
     public void insert(int val, int index){
