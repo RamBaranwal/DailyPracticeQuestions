@@ -1,0 +1,39 @@
+#include <iostream>
+#include <string>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+int lcs(string word1, string word2){
+
+    int n = word1.length();
+    int m = word2.length();
+
+    vector<vector<int>> dp(n + 1, vector<int> (m + 1, 0));
+
+    for(int i = 1; i <= n; i++){
+        for(int j = 1; j <= m; j++){
+            if(word1[i - 1] == word2[j - 1]){
+                dp[i][j] = 1 + dp[i - 1][j - 1];
+            }
+            else{
+                dp[i][j] = max(dp[i - 1][j], dp[i][j - 1]);
+            }
+        }
+    }
+    return dp[n][m];
+}
+
+int deleteMinCharToMakeStringEqual(string word1, string word2){
+    int num = lcs(word1, word2);
+    return word1.length() + word2.length() - 2 * num;
+}
+
+int main(){
+    string word1;
+    cin >> word1;
+    string word2;
+    cin >> word2;
+    cout << deleteMinCharToMakeStringEqual(word1, word2);
+}
